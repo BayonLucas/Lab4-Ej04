@@ -1,0 +1,21 @@
+<h1>LogIn</h1>
+<label>Ingrese usuario: <input type="text" placeholder="usuario" [(ngModel)]="usuario.usuario"></label>
+
+<br>
+<label>Ingrese clave: <input type="text" placeholder="contraseña" [(ngModel)]="usuario.password">
+</label>
+
+<br><br>
+
+<!-- <button (click)="IniciarSesion()">Iniciar Sesión</button> -->
+<!-- <app-bienvenido *ngIf="login;"></app-bienvenido>
+<app-error *ngIf="usuario.usuario != '' && usuario.password != ''"></app-error> -->
+<!-- @if(login == 1){
+    <app-bienvenido></app-bienvenido>
+}
+@else if(login == -1){
+    <app-error></app-error>
+} -->
+
+<button (click)="IniciarSesion()">Iniciar Sesión</button>
+
