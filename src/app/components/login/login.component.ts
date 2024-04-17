@@ -26,7 +26,13 @@ export class LoginComponent {
   IniciarSesion(){
     this.login = this.usuario.Validar();
     const res = this.login == 1? "bienvenido" : "asd";
-    this.router.navigate([res])
+
+    //localStorage
+    if(res == "bienvenido"){
+      localStorage.setItem("user", JSON.stringify(this.usuario));
+    }
+
+    this.router.navigate([res]);
   }
 
 }

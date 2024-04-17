@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, LOCALE_ID } from '@angular/core';
 import { MiUsuario } from '../../clases/mi-usuario';
 @Component({
   selector: 'app-bienvenido',
@@ -8,5 +8,8 @@ import { MiUsuario } from '../../clases/mi-usuario';
   styleUrl: './bienvenido.component.scss'
 })
 export class BienvenidoComponent {
-  usuario: MiUsuario = new MiUsuario();
+  usuario: MiUsuario = JSON.parse(localStorage.getItem("user")!)
+
+
+
 }
